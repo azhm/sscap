@@ -1,17 +1,31 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SSCap", "SSCap\SSCap.vcxproj", "{9BC738EB-63DF-4416-936E-E4F0139C47FC}"
 	ProjectSection(ProjectDependencies) = postProject
+		{799D237D-7248-49D5-925F-3FA633BBD867} = {799D237D-7248-49D5-925F-3FA633BBD867}
 		{CC8602C7-9E76-4064-8B5B-908DD961D7B1} = {CC8602C7-9E76-4064-8B5B-908DD961D7B1}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zxing", "zxing\zxing.vcxproj", "{CC8602C7-9E76-4064-8B5B-908DD961D7B1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibPrivoxy", "LibPrivoxy\LibPrivoxy\LibPrivoxy.vcxproj", "{799D237D-7248-49D5-925F-3FA633BBD867}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EBD86293-69A9-456B-B814-916E12AA9BBF} = {EBD86293-69A9-456B-B814-916E12AA9BBF}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp", "LibPrivoxy\cryptopp562\cryptdll.vcxproj", "{EBD86293-69A9-456B-B814-916E12AA9BBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Debug|x64 = Debug|x64
+		Lib_Debug|Win32 = Lib_Debug|Win32
+		Lib_Debug|x64 = Lib_Debug|x64
+		Lib_Release|Win32 = Lib_Release|Win32
+		Lib_Release|x64 = Lib_Release|x64
 		Release|Win32 = Release|Win32
 		Release|x64 = Release|x64
 	EndGlobalSection
@@ -19,15 +33,59 @@ Global
 		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Debug|Win32.ActiveCfg = Debug|Win32
 		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Debug|Win32.Build.0 = Debug|Win32
 		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Debug|x64.ActiveCfg = Debug|Win32
+		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Lib_Debug|Win32.ActiveCfg = Debug|Win32
+		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Lib_Debug|Win32.Build.0 = Debug|Win32
+		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Lib_Debug|x64.ActiveCfg = Release|Win32
+		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Lib_Debug|x64.Build.0 = Release|Win32
+		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Lib_Release|Win32.ActiveCfg = Release|Win32
+		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Lib_Release|Win32.Build.0 = Release|Win32
+		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Lib_Release|x64.ActiveCfg = Release|Win32
+		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Lib_Release|x64.Build.0 = Release|Win32
 		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Release|Win32.ActiveCfg = Release|Win32
 		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Release|Win32.Build.0 = Release|Win32
 		{9BC738EB-63DF-4416-936E-E4F0139C47FC}.Release|x64.ActiveCfg = Release|Win32
 		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Debug|Win32.ActiveCfg = Debug|Win32
 		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Debug|Win32.Build.0 = Debug|Win32
 		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Debug|x64.ActiveCfg = Debug|Win32
+		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Lib_Debug|Win32.ActiveCfg = Debug|Win32
+		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Lib_Debug|Win32.Build.0 = Debug|Win32
+		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Lib_Debug|x64.ActiveCfg = Release|Win32
+		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Lib_Debug|x64.Build.0 = Release|Win32
+		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Lib_Release|Win32.ActiveCfg = Release|Win32
+		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Lib_Release|Win32.Build.0 = Release|Win32
+		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Lib_Release|x64.ActiveCfg = Release|Win32
+		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Lib_Release|x64.Build.0 = Release|Win32
 		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Release|Win32.ActiveCfg = Release|Win32
 		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Release|Win32.Build.0 = Release|Win32
 		{CC8602C7-9E76-4064-8B5B-908DD961D7B1}.Release|x64.ActiveCfg = Release|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Debug|Win32.ActiveCfg = Debug|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Debug|Win32.Build.0 = Debug|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Debug|x64.ActiveCfg = Debug|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Lib_Debug|Win32.ActiveCfg = Lib_Debug|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Lib_Debug|Win32.Build.0 = Lib_Debug|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Lib_Debug|x64.ActiveCfg = Lib_Debug|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Lib_Release|Win32.ActiveCfg = Lib_Release|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Lib_Release|Win32.Build.0 = Lib_Release|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Lib_Release|x64.ActiveCfg = Lib_Release|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Release|Win32.ActiveCfg = Release|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Release|Win32.Build.0 = Release|Win32
+		{799D237D-7248-49D5-925F-3FA633BBD867}.Release|x64.ActiveCfg = Release|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Debug|Win32.Build.0 = Debug|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Debug|x64.ActiveCfg = Debug|x64
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Debug|x64.Build.0 = Debug|x64
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Lib_Debug|Win32.ActiveCfg = Debug|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Lib_Debug|Win32.Build.0 = Debug|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Lib_Debug|x64.ActiveCfg = Debug|x64
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Lib_Debug|x64.Build.0 = Debug|x64
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Lib_Release|Win32.ActiveCfg = Release|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Lib_Release|Win32.Build.0 = Release|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Lib_Release|x64.ActiveCfg = Release|x64
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Lib_Release|x64.Build.0 = Release|x64
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Release|Win32.ActiveCfg = Release|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Release|Win32.Build.0 = Release|Win32
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Release|x64.ActiveCfg = Release|x64
+		{EBD86293-69A9-456B-B814-916E12AA9BBF}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

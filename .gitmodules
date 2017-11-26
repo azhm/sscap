@@ -1,0 +1,3 @@
+[submodule "LibPrivoxy"]
+	path = LibPrivoxy
+	url = https://github.com/ssrlive/LibPrivoxy.git

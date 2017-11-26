@@ -10,7 +10,7 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-const char* __buildtime = __TIME__ " "__DATE__ ;
+const char* __buildtime = __TIME__ " " __DATE__ ;
 
 CAboutDlg::CAboutDlg() : CDialogEx(CAboutDlg::IDD)
 {
