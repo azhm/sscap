@@ -62,7 +62,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>uafxcwd.lib;libsodium.lib;zxing.lib;LibPrivoxyD.lib;basiclibd.lib</AdditionalDependencies>
+      <AdditionalDependencies>uafxcwd.lib;libsodium.lib;zxing.lib;LibPrivoxy.lib;basiclibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>uafxcwd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Midl>
@@ -168,7 +168,6 @@
     <ClInclude Include="..\common\json\value.h" />
     <ClInclude Include="..\common\json\version.h" />
     <ClInclude Include="..\common\json\writer.h" />
-    <ClInclude Include="..\common\libprivoxy\libprivoxy.h" />
     <ClInclude Include="..\Socks\BaseDef.h" />
     <ClInclude Include="..\Socks\Encypter.h" />
     <ClInclude Include="..\Socks\EncyptionMgr.h" />

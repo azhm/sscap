@@ -4,7 +4,7 @@
 #include "Utils.h"
 #include <assert.h>
 #include "BaseDef.h"
-#include "libprivoxy/libprivoxy.h"
+#include "libprivoxy.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

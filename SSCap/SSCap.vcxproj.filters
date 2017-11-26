@@ -34,9 +34,6 @@
     <Filter Include="LibQREncode">
       <UniqueIdentifier>{d78b9707-77c8-4404-87e6-4a05ecc504a6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="libprivoxy">
-      <UniqueIdentifier>{2e17bcdf-9eeb-4218-98f6-9b916d20315f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="shadowsocks">
       <UniqueIdentifier>{75e6d9da-6b87-4319-bfb9-05ca5ef304e9}</UniqueIdentifier>
     </Filter>
@@ -452,9 +449,6 @@
     </ClInclude>
     <ClInclude Include="zxing\jpgd.h">
       <Filter>zxing</Filter>
-    </ClInclude>
-    <ClInclude Include="..\common\libprivoxy\libprivoxy.h">
-      <Filter>libprivoxy</Filter>
     </ClInclude>
     <ClInclude Include="PictureEx.h">
       <Filter>Header Files</Filter>
