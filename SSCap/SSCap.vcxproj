@@ -62,7 +62,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>uafxcwd.lib;libsodium.lib;zxing.lib;LibPrivoxy.lib;basiclibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>uafxcwd.lib;libsodium.lib;zxing.lib;LibPrivoxy.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>uafxcwd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <Midl>
@@ -154,6 +154,9 @@
     <None Include="res\TRFFC09.ICO" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\common\Debug.h" />
+    <ClInclude Include="..\common\dns.h" />
+    <ClInclude Include="..\common\Ini.h" />
     <ClInclude Include="..\common\JsonParser.h" />
     <ClInclude Include="..\common\json\allocator.h" />
     <ClInclude Include="..\common\json\assertions.h" />
@@ -168,6 +171,18 @@
     <ClInclude Include="..\common\json\value.h" />
     <ClInclude Include="..\common\json\version.h" />
     <ClInclude Include="..\common\json\writer.h" />
+    <ClInclude Include="..\common\mymutex.h" />
+    <ClInclude Include="..\common\ProxyDns.h" />
+    <ClInclude Include="..\common\ProxySocketClient.h" />
+    <ClInclude Include="..\common\Registry.h" />
+    <ClInclude Include="..\common\SocketClient.h" />
+    <ClInclude Include="..\common\SocketEx.h" />
+    <ClInclude Include="..\common\SocketWrapper.h" />
+    <ClInclude Include="..\common\SSDnsClient.h" />
+    <ClInclude Include="..\common\SSProxySocketClient.h" />
+    <ClInclude Include="..\common\tarobase64.h" />
+    <ClInclude Include="..\common\UdpTest.h" />
+    <ClInclude Include="..\common\Utils.h" />
     <ClInclude Include="..\Socks\BaseDef.h" />
     <ClInclude Include="..\Socks\Encypter.h" />
     <ClInclude Include="..\Socks\EncyptionMgr.h" />
@@ -260,6 +275,8 @@
     <ClCompile Include="..\common\json\json_reader.cpp" />
     <ClCompile Include="..\common\json\json_value.cpp" />
     <ClCompile Include="..\common\json\json_writer.cpp" />
+    <ClCompile Include="..\common\tarobase64.cpp" />
+    <ClCompile Include="..\common\Utils.cpp" />
     <ClCompile Include="..\Socks\BaseDef.cpp" />
     <ClCompile Include="..\Socks\Encypter.cpp" />
     <ClCompile Include="..\Socks\EncyptionMgr.cpp" />

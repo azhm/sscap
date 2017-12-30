@@ -37,6 +37,9 @@
     <Filter Include="shadowsocks">
       <UniqueIdentifier>{75e6d9da-6b87-4319-bfb9-05ca5ef304e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{ca1a2705-21ac-4a57-a2b7-a9985cc9e6be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -480,6 +483,51 @@
     <ClInclude Include="APPConfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\common\Debug.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\dns.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Ini.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\mymutex.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ProxyDns.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ProxySocketClient.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Registry.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SocketClient.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SocketEx.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SocketWrapper.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SSDnsClient.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SSProxySocketClient.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\tarobase64.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\UdpTest.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SSCap.cpp">
@@ -724,6 +772,12 @@
     </ClCompile>
     <ClCompile Include="APPConfig.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Utils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\tarobase64.cpp">
+      <Filter>common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
